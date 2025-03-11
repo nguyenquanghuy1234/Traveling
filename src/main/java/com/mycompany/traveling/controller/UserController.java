@@ -22,11 +22,11 @@ public class UserController {
     private UserService userService;
 
    
-    @GetMapping("/dsSinhVien")
+    @GetMapping("")
     public String showSinhVienPage(Model model) {
     
          model.addAttribute("dssv", "hello");
-        return "signin"; // Trả về file `sinhvien.html`
+        return "about"; // Trả về file `sinhvien.html`
     }
 
     // @GetMapping("/{id}")
